@@ -834,7 +834,7 @@ body {
   justify-content: center;
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, var(--orange-primary), var(--orange-accent));
+  background: linear-gradient(135deg, var(--white-primary), var(--orange-accent));
   border-radius: var(--radius-lg);
   color: white;
   font-weight: var(--font-weight-bold);
