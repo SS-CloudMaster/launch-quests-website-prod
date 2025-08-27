@@ -1058,6 +1058,11 @@ body {
   z-index: 1; /* Keeps text above video */
 }
 
+.hero .container {
+  position: relative;
+  z-index: 1; /* Keeps text above video */
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
