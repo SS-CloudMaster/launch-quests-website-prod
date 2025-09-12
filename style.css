@@ -840,6 +840,12 @@ html {
   margin-top: var(--space-2);
 }
 
+.logo-icon img {
+  height: 40px;    /* controls logo height */
+  width: auto;     /* keeps aspect ratio */
+  display: block;  /* removes extra spacing below image */
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
