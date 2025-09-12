@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Quests - Founder-first tech pod — design-first, dev-ready</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">🚀</div>
+                    <div class="logo-text">
+                        <h2>Launch Quests</h2>
+                        <span class="logo-subtitle">Launch Smarter. Scale Faster</span>
+                    </div>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#hero" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#case-studies" class="nav-link">Case Studies</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn btn--primary nav-cta" onclick="bookAudit()">Book Free Audit</button>
+                </div>
+                <div class="mobile-menu-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Founder-first tech pod — <span class="highlight">design-first, dev-ready</span></h1>
+                    <p class="hero-description">Simplify technology execution with fast delivery, scalable systems, and ongoing support. From MVP to scale, we're your dedicated tech partner.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn--primary btn--lg" onclick="bookAudit()">Book Free Audit</button>
+                        <button class="btn btn--outline btn--lg" onclick="scrollToSection('pricing')">View Pricing</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Startups Launched</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">₹2-3L</div>
+                            <div class="stat-label">Typical Investment</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5-8 weeks</div>
+                            <div class="stat-label">Time to Market</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="floating-element floating-1">🔄</div>
+                        <div class="floating-element floating-2">📱</div>
+                        <div class="floating-element floating-3">☁️</div>
+                        <div class="hero-gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Tech Stack Solutions</h2>
+                <p>Everything you need to build, launch, and scale your startup</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>CRM & Workflow Automation</h3>
+                    <p>Custom CRM systems that adapt to your unique business processes, eliminating manual work and streamlining operations.</p>
+                    <ul class="service-highlights">
+                        <li>Custom CRM development</li>
+                        <li>Automated workflows</li>
+                        <li>Integration with existing tools</li>
+                        <li>Real-time analytics</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Web & Mobile App Development</h3>
+                    <p>Full-stack development from concept to deployment, creating scalable applications that grow with your business.</p>
+                    <ul class="service-highlights">
+                        <li>Custom web applications</li>
+                        <li>Mobile app development</li>
+                        <li>Progressive web apps</li>
+                        <li>API development</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Infrastructure & DevOps</h3>
+                    <p>Scalable cloud solutions with automated deployment pipelines, ensuring your applications are fast, secure, and reliable.</p>
+                    <ul class="service-highlights">
+                        <li>Cloud architecture setup</li>
+                        <li>DevOps pipeline implementation</li>
+                        <li>Automated deployments</li>
+                        <li>Performance monitoring</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Managed IT & Support Services</h3>
+                    <p>24/7 monitoring and support for your entire tech stack, so you can focus on growing your business.</p>
+                    <ul class="service-highlights">
+                        <li>24/7 system monitoring</li>
+                        <li>Proactive maintenance</li>
+                        <li>Security management</li>
+                        <li>Technical support</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Digital Growth & Performance Marketing</h3>
+                    <p>Data-driven marketing strategies that deliver measurable results and accelerate your customer acquisition.</p>
+                    <ul class="service-highlights">
+                        <li>Performance marketing</li>
+                        <li>Growth strategy</li>
+                        <li>Analytics & tracking</li>
+                        <li>Conversion optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparent Pricing for Every Stage</h2>
+                <p>Choose the package that fits your startup's growth phase</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-badge">Intro Offer</div>
+                    <div class="pricing-header">
+                        <h3>Starter Sprint</h3>
+                        <div class="pricing-price">₹59,999</div>
+                        <div class="pricing-duration">2 weeks delivery</div>
+                    </div>
+                    <p class="pricing-description">MVP/CRM audit + prototype</p>
+                    <ul class="pricing-features">
+                        <li>Comprehensive CRM audit & strategy</li>
+                        <li>Functional MVP prototype</li>
+                        <li>Technical roadmap & recommendations</li>
+                        <li>2-week rapid delivery</li>
+                        <li>Perfect for early-stage startups</li>
+                        <li>Email & phone support</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width pricing-cta" onclick="bookAudit()">Start Your Sprint</button>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="pricing-badge popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Core Package</h3>
+                        <div class="pricing-price">₹2-3L</div>
+                        <div class="pricing-duration">5-8 weeks delivery</div>
+                    </div>
+                    <p class="pricing-description">Complete CRM/app + cloud setup</p>
+                    <ul class="pricing-features">
+                        <li>Custom CRM development</li>
+                        <li>Web & mobile application</li>
+                        <li>Cloud infrastructure setup</li>
+                        <li>DevOps pipeline implementation</li>
+                        <li>Complete digital foundation</li>
+                        <li>Training & documentation</li>
+                        <li>3 months support included</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width pricing-cta" onclick="bookAudit()">Get Core Package</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-badge">For Scale</div>
+                    <div class="pricing-header">
+                        <h3>Managed Pod</h3>
+                        <div class="pricing-price">₹2.5L+</div>
+                        <div class="pricing-duration">per month</div>
+                    </div>
+                    <p class="pricing-description">Ongoing dev + managed IT retainer</p>
+                    <ul class="pricing-features">
+                        <li>Dedicated development team</li>
+                        <li>Ongoing feature development</li>
+                        <li>24/7 managed IT services</li>
+                        <li>Priority support & maintenance</li>
+                        <li>Continuous optimization</li>
+                        <li>Monthly strategy sessions</li>
+                        <li>Unlimited revisions</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width pricing-cta" onclick="bookAudit()">Join Managed Pod</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <div class="section-header">
+                <h2>Real Results for Real Businesses</h2>
+                <p>See how we've helped startups transform their operations and growth</p>
+            </div>
+            <div class="case-studies-grid">
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>Cut Onboarding Time by 60%</h3>
+                        <div class="case-study-meta">
+                            <span class="industry">B2B Software</span>
+                            <span class="client">SaaS Startup</span>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <p class="challenge"><strong>Challenge:</strong> Manual onboarding process taking 8+ hours per client</p>
+                        <p class="solution"><strong>Solution:</strong> Custom CRM with automated workflows and client portal</p>
+                        <div class="results">
+                            <h4>Results:</h4>
+                            <ul>
+                                <li>60% reduction in onboarding time</li>
+                                <li>27% increase in customer satisfaction</li>
+                                <li>50% reduction in support tickets</li>
+                                <li>₹2.3L saved annually in operational costs</li>
+                            </ul>
+                        </div>
+                        <blockquote>
+                            "Launch Quests transformed our entire customer journey. The custom CRM solution eliminated bottlenecks we didn't even know existed."
+                            <cite>— Rahul Sharma, Founder</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <h3>Cut Support Costs by 40%</h3>
+                        <div class="case-study-meta">
+                            <span class="industry">E-commerce</span>
+                            <span class="client">Growing Tech Company</span>
+                        </div>
+                    </div>
+                    <div class="case-study-content">
+                        <p class="challenge"><strong>Challenge:</strong> Frequent system downtime and unpredictable IT costs</p>
+                        <p class="solution"><strong>Solution:</strong> Comprehensive managed IT services with proactive monitoring</p>
+                        <div class="results">
+                            <h4>Results:</h4>
+                            <ul>
+                                <li>40% reduction in support costs</li>
+                                <li>99.9% uptime achievement</li>
+                                <li>24x7 proactive monitoring</li>
+                                <li>Zero security incidents in 12 months</li>
+                            </ul>
+                        </div>
+                        <blockquote>
+                            "The managed IT services from Launch Quests gave us peace of mind and predictable costs. Our team can now focus on growth instead of firefighting."
+                            <cite>— Priya Patel, CTO</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <h3>What Our Clients Say</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote>"Launch Quests delivered exactly what we needed - a tech partner who understands startups and moves fast."</blockquote>
+                        <cite>— Ankit Kumar, Founder, TechFlow</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote>"Their design-first approach made all the difference. The final product exceeded our expectations."</blockquote>
+                        <cite>— Sneha Jain, Product Manager, StartupX</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Magnet Section -->
+    <section id="lead-magnet" class="lead-magnet">
+        <div class="container">
+            <div class="lead-magnet-content">
+                <div class="lead-magnet-text">
+                    <h2>Free Resource: CRM Setup Checklist for Startups</h2>
+                    <h3>Complete Step-by-Step Implementation Guide</h3>
+                    <p>Get the exact framework we use to set up CRM systems for 50+ startups</p>
+                    <div class="lead-magnet-includes">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>CRM selection criteria & comparison matrix</li>
+                            <li>Week-by-week implementation timeline</li>
+                            <li>Data migration checklist & best practices</li>
+                            <li>Team training guide & adoption strategies</li>
+                            <li>Performance metrics & KPI tracking</li>
+                            <li>Common pitfalls & how to avoid them</li>
+                        </ul>
+                    </div>
+                    <div class="lead-magnet-meta">
+                        <span class="file-info">📄 24 pages • PDF Guide</span>
+                    </div>
+                </div>
+                <div class="lead-magnet-form">
+                    <div class="form-container">
+                        <h4>Download Free Guide</h4>
+                        <form id="leadMagnetForm" class="lead-form">
+                            <div class="form-group">
+                                <input type="text" id="leadName" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="leadEmail" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="leadCompany" name="company" class="form-control" placeholder="Company Name">
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Download Free Guide</button>
+                        </form>
+                        <p class="form-disclaimer">No spam. Unsubscribe anytime. We respect your privacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Founded in 2020, Based in Bangalore</h2>
+                    <p class="about-mission">Our mission: Simplify technology execution for founders by combining fast delivery, scalable systems, and ongoing support into one streamlined service.</p>
+                    <p>At Launch Quests, we believe every founder deserves a dedicated tech partner who understands the startup journey. We're not just developers or consultants – we're your technical co-founders who help you navigate the complex world of technology with confidence.</p>
+                    <p>Our team of 2-10 dedicated professionals combines deep technical expertise with startup experience, ensuring we deliver solutions that not only work today but scale for tomorrow.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🚀</div>
+                            <h4>Speed</h4>
+                            <p>Fast delivery without compromising quality</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <h4>Focus</h4>
+                            <p>Laser-focused on startup needs</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🤝</div>
+                            <h4>Partnership</h4>
+                            <p>Your success is our success</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">2020</div>
+                        <div class="stat-label">Founded</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2-10</div>
+                        <div class="stat-label">Team Size</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready to Transform Your Startup?</h2>
+                <p>Let's discuss your project and see how we can help you achieve your goals</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <div class="contact-form-container">
+                        <h3>Book Your Free Audit</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Interest</label>
+                                <select id="service" name="service" class="form-control">
+                                    <option value="">Select a service</option>
+                                    <option value="starter">Starter Sprint (₹59,999)</option>
+                                    <option value="core">Core Package (₹2-3L)</option>
+                                    <option value="managed">Managed Pod (₹2.5L+/month)</option>
+                                    <option value="consultation">General Consultation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Tell us about your project</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Describe your current challenges and what you're looking to achieve..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Book Free Audit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-info-section">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:solutions@launchquests.com">solutions@launchquests.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+917204148390">+91 72041 48390</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Bangalore, Karnataka<br>India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-details">
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours<br>Free audit scheduling available</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="final-cta">
+                        <h4>Questions about pricing or process?</h4>
+                        <p>Schedule a free 30-minute consultation to discuss your specific needs.</p>
+                        <button class="btn btn--outline btn--full-width" onclick="bookAudit()">Schedule Free Call</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
