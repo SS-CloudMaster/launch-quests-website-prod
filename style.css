@@ -814,6 +814,13 @@ html {
   gap: var(--space-12);
 }
 
+/* Logo icon (image) */
+.logo-icon img {
+  height: 40px;   /* adjust size */
+  width: auto;    /* keep proportions */
+  display: block;
+}
+
 .logo-icon {
   font-size: 2rem;
   background: var(--color-brand-gradient);
