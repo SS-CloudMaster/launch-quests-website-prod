@@ -210,7 +210,7 @@ function handleContactFormSubmission(e) {
 }
 
 async function postContactForm(form, formData) {
-    const API_URL = "https://7wi6kahqb3.execute-api.ap-south-1.amazonaws.com";
+    const API_URL = "https://7wi6kahqb3.execute-api.ap-south-1.amazonaws.com/submit";
     const SECRET_TOKEN = "LQ_x7T9dE"; // Match your Lambda token
 
     const payload = {
@@ -218,8 +218,8 @@ async function postContactForm(form, formData) {
         lastName: formData.lastName || '',
         email: formData.email || '',
         phone: formData.phone || '',
-        company: formData.company || '',
-        service: formData.service || '',
+        companyName: formData.company || '',
+        serviceInterest: formData.service || '',
         message: formData.message || ''
     };
 
