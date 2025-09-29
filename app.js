@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Smooth Navigation System
 function initializeNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', throttle(handleScroll, 200));
     
     // Handle navigation clicks
     navLinks.forEach(link => {
@@ -317,6 +318,19 @@ function validateFormFields(formData, required, formId) {
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
+}
+
+function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+        const args = arguments;
+        const context = this;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
 }
 
 // =======================
