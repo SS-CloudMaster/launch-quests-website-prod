@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <title>Launch Quests - Launch Smarter Scale Faster | Your One-Stop Launchpad for Digital Success</title>
     <meta name="description" content="Launch Quests helps businesses launch smarter and scale faster with digital marketing, web development, IT infrastructure, and CRM solutions.">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -423,7 +424,9 @@
                 We fuel your business growth by building and managing every part of your digital journey—websites, apps, CRM, marketing, and all your tech needs, handled seamlessly end-to-end.
             </p>
             <div class="flex flex-wrap gap-4 justify-center">
-                <button class="btn-primary nav-link" data-page="contact">Start Free Consultation</button>
+                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+                            Start Free Consultation
+                </button>
                 <button class="btn-secondary nav-link" data-page="case-studies">View Our Work</button>
             </div>
             <div class="mt-12 text-sm text-[var(--text-secondary)]">
@@ -559,7 +562,9 @@
             <div class="max-w-3xl mx-auto glass rounded-xl p-12 reveal">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4">Ready to Launch Smarter?</h2>
                 <p class="text-xl text-[var(--text-secondary)] mb-8">Book Your 30-Min Strategy Session Today</p>
-                <button class="btn-primary text-lg px-8 py-4 nav-link" data-page="contact">Schedule Consultation →</button>
+                <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+                            Schedule Consultation →
+                </button>
             </div>
         </div>
     </section>
@@ -1377,6 +1382,7 @@
                                 <option value="it-infrastructure">IT Infrastructure</option>
                                 <option value="crm-solutions">CRM Solutions</option>
                                 <option value="full-service">Full Service Package</option>
+                                <option value="full-service">Others</option>
                             </select>
                         </div>
                         <div>
